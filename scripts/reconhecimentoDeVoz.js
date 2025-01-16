@@ -10,6 +10,7 @@ recognition.start()
 recognition.addEventListener('result', (event) => {
     chute = event.results[0][0].transcript
     exibeChuteNaTela(chute)
+    verificaSeOChutePossuiUmValorValido(chute)
 })
 
 function exibeChuteNaTela(chute){
