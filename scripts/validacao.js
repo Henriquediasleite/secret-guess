@@ -7,7 +7,7 @@ function verificaSeOChutePossuiUmValorValido(chute) {
     }
 
     if(numeroForMaiorOuMenorQueOValorPermitido(numero)) {
-        elementoChute.innerHTML += `<div>Valor inválido: O número secreto precisa estar entre ${menorValor} e ${maiorValor}`
+        elementoChute.innerHTML += `<div>Valor inválido: O número secreto precisa estar entre ${menorValor} e ${maiorValor}</div>`
         return
     } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `
